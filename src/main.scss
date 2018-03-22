@@ -27,6 +27,10 @@ body{
 	justify-content: center;
 }
 
+.content {
+	min-height: 300px;
+}
+
 // nav
 .nav{
 	ul{
@@ -60,6 +64,7 @@ body{
 
 	.avatar{
 		margin-bottom: .8rem;
+		margin-top: .8rem;
 		text-align: center;
 
 		span{
@@ -95,7 +100,7 @@ body{
 // skills
 .skills{
 	width: 400px;
-	height: 300px;
+	// height: 300px;
 	margin-bottom: 20px;
 	text-align: center;
 
