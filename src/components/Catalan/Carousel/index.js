@@ -38,6 +38,7 @@ class Carousel extends Component {
                     dots={false}
                     effect='fade'
                     ref={el => this.carousel = el}
+                    /*autoplay={true}*/
                 >
                     {
                         this.state.avatars.length === 0 ?

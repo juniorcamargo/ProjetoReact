@@ -12,47 +12,18 @@ import { Row, Col, Avatar, Button, Icon, Tooltip } from "antd";
 import { Helmet } from "react-helmet";
 
 // custom
-import "./main.scss";
-
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Contact from "./components/Contact";
-import Catalan from "./components/Catalan";
+import Login from "./components/Login";
 import NotFound from "./components/NotFound";
 
 const ConfigRoutes = () => (
   <Router>
     <div>
-
       {/* content routes */}
       <div className="content">
         <Switch>
-          <Route exact path="/" title="About" component={About} />
-          <Route path="/skills" title="Skills" component={Skills} />
-          <Route path="/contact" title="Contact" component={Contact} />
-          <Route path='/404' title="Not Found" component={NotFound} />
-          <Route path="/Catalan" title="Catalan" component={Catalan}/>
+          <Route path="/Login" title="Login" component={Login}/>
           <Route path="*" component={NotFound}/>
         </Switch>
-      </div>
-
-      <div className="nav">
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">About</Link>
-            </li>
-            <li>
-              <Link to="/skills">Skills</Link>
-            </li>
-            <li>
-              <Link to="/Catalan">Catalan</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
-        </nav>
       </div>
     </div>
   </Router>
